@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <div class="collapse navbar-collapse justify-content-center">
+          <ul class="navbar-nav">
+            <li class="nav-item mx-3">
+              <a class="nav-link" href="../pages/weather.html">Погода</a>
+            </li>
+            <li class="nav-item mx-3">
+              <a class="nav-link" href="../pages/data.html">Время</a>
+            </li>
+            <li class="nav-item mx-3">
+              <a class="nav-link" href="../pages/slider.html">Слайдер</a>
+            </li>
+            <li class="nav-item mx-3">
+              <a class="nav-link" href="#">TODO</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container my-5">
+      <h2 class="text-center">Задачи</h2>
+
+      <!-- Поле для ввода новой задачи -->
+      <div class="input-group mb-3">
+        <input
+          type="text"
+          id="newTaskInput"
+          class="form-control"
+          placeholder="Введите новую задачу"
+        />
+        <div class="input-group-append">
+          <span id="errorMsg" class="text-danger ml-3"></span>
+        </div>
+      </div>
+
+      <!-- Список задач -->
+      <ul class="list-group" id="taskList"></ul>
+
+      <!-- Кнопка для удаления выполненных задач -->
+      <button class="btn btn-danger mt-3" id="deleteCompleted">
+        Удалить выполненные задачи
+      </button>
+      <button class="btn btn-danger" id="btn">lllllll</button>
+    </div>
+  </body>
+  <script src="../js/todo.js"></script>
+</html>
